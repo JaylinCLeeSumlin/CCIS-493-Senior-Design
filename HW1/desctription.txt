@@ -1,0 +1,7 @@
+Design and develop a program to allow a user to enter a zip code or name of a city and
+then the program uses https://docs.airnowapi.org/Links to an external site. to retrieve
+the current weather data related to the area that the user has identified.
+
+Make sure to examine user inputs. You are free to choose your own programming language.
+
+You will be submitting your code as well as screenshots of the output of your program.

@@ -1,0 +1,16 @@
+1: Open a new terminal
+2: Verify node CLI is installed
+    node --version
+3: CHange to project folder
+4: Clone git repo with neccessary artifacts for lab
+    git clone https://github.com/ibm-developer-skills-network/lkpho-Cloud-applications-with-Node.js-and-React.git
+5: Change to directory needed for lab
+    cd lkpho-Cloud-applications-with-Node.js-and-React/CD220Labs/http_server
+6: List contents of the directory
+7: Check the contents of index.js (server-side script to run)
+    cat index.js
+8: Run index.js to start server
+    node index.js
+9: Split the terminal.
+10: In secont terminal, ping applicaition using curl command
+    curl localhost:8080
