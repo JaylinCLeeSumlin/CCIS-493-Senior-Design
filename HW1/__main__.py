@@ -19,16 +19,15 @@ def parse_cli_argv(argv):
     # print(f"argv: {argv}")
 
 def search_by_box(argv, base_url):
-    params = {}
-
-    index = 0
-    params["parameter"] = argv[index]
-    params["bdate"] = argv[index + 1]
-    params["edate"] = argv[index + 2]
-    params["minlat"] = argv[index + 3]
-    params["mazlat"] = argv[index + 4]
-    params["minlon"] = argv[index + 5]
-    params["maxlon"] = argv[index + 6]
+    params = {
+        "parameter": argv[0],
+        "bdate": argv[1],
+        "edate": argv[2],
+        "minlat": argv[3],
+        "maxlat": argv[4],
+        "minlon": argv[5],
+        "maxlon": argv[6]
+    }
 
     # print(f"parmas: {params}")
 
