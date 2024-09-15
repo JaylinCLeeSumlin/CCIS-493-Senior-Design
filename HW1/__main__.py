@@ -10,15 +10,18 @@ def main(args = None):
 def parse_cli_argv(argv):
     base_url = "https://github.com/USEPA/RAQSAPI/"
 
-    if len(argv == 5) or "bybox" in argv:
+    if len(argv) == 5:
         search_by_box(argv, base_url)
+    elif "bybox" in argv:
+        search_by_box(argv[1:], base_url)
     print(argv)
 
 def search_by_box(argv, base_url):
     pass
 
+
 if __name__ == "__main__":
-    # main()
+    main()
 
     # serch by lat/long (bybox): zipcode bdate edate minlat maxlat minlon maxlon
-    main(["44201", "19950101", "19951231", "33.3", "33.6", "-87.0", "-86.7"])
+    # main(["44201", "19950101", "19951231", "33.3", "33.6", "-87.0", "-86.7"])
