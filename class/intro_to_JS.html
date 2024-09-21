@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div id="output">
+        </div>
+
+    <button id="btn1">Click Me</button>
+    </body>
+
+    <script>
+        function clickHandler(e){
+            document.getElementById("output").innerHTML = "<h1>Got a click!</h1>"
+        }
+        document.getElementById("output").innerText = "This is fun!"
+        var btn1 = document.getElementById("btn1")
+        // btn1.onclick = clickHandler
+        btn1.addEventListener("click", function(e){
+
+        })
+
+    </script>
+</html>
